@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Disease - Diagnosis System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <i class="fas fa-hand-holding-medical"></i>
+                NailDiagnosis AI
+            </a>
+            <ul class="nav-links">
+                <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="/nailhome" class="active"><i class="fas fa-stethoscope"></i> Nail Disease</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Nail Disease Info Section -->
+    <section class="nail-hero">
+        <div class="container">
+            <h1 class="page-title">Nail Disease Detection</h1>
+            <p class="page-subtitle">AI-Powered Early Stage Disease Diagnosis</p>
+        </div>
+    </section>
+
+    <section class="nail-info">
+        <div class="container">
+            <div class="info-banner">
+                <div class="info-text">
+                    <h2>Why Nail Health Matters</h2>
+                    <p>Your nails can reveal important clues about your overall health. Changes in nail color,
+                       shape, texture, or growth rate can indicate underlying health conditions ranging from
+                       nutritional deficiencies to serious systemic diseases.</p>
+                    <p>Our AI system can detect <strong>17 different nail conditions</strong> from a single
+                       image, providing instant preliminary diagnosis to help you take timely action.</p>
+                </div>
+            </div>
+
+            <!-- Disease Categories -->
+            <h2 class="section-title">Detectable Conditions</h2>
+            <div class="disease-info-grid">
+                <div class="disease-info-card">
+                    <h3>🔴 Darier's Disease</h3>
+                    <p>A genetic skin condition that causes greasy, warty-looking blemishes on the nails.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>📏 Muehrcke's Lines</h3>
+                    <p>White lines that run across the nail, often indicating low protein levels or liver disease.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>💇 Alopecia Areata</h3>
+                    <p>An autoimmune condition that can cause nail pitting, ridges, and brittleness.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>📐 Beau's Lines</h3>
+                    <p>Deep horizontal ridges that indicate interruption in nail growth due to illness or injury.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🔵 Bluish Nail</h3>
+                    <p>Blue discoloration indicating low oxygen levels (cyanosis) or circulation problems.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🫧 Clubbing</h3>
+                    <p>Enlarged fingertips with curved nails, often associated with lung or heart disease.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🩹 Eczema</h3>
+                    <p>Inflammatory condition causing nail ridges, pitting, and discoloration.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🌗 Lindsay's Nails</h3>
+                    <p>Half-and-half nails with white proximal and brown/red distal portions, linked to kidney disease.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🥄 Koilonychia</h3>
+                    <p>Spoon-shaped nails that can indicate iron deficiency anemia.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>⬜ Leukonychia</h3>
+                    <p>White spots or discoloration on nails, caused by minor injury or zinc deficiency.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🐏 Onychogryphosis</h3>
+                    <p>Ram's horn nail - thickened and curved nail, common in elderly patients.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>📋 Onycholysis</h3>
+                    <p>Separation of the nail from the nail bed, caused by infection, injury, or thyroid disease.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🍄 Onychomycosis</h3>
+                    <p>Fungal infection causing nail discoloration, thickening, and crumbling.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🤍 Pale Nail</h3>
+                    <p>Pale nails may indicate anemia, heart failure, liver disease, or malnutrition.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🔴 Red Lunula</h3>
+                    <p>Red discoloration of the nail lunula, associated with heart failure or lupus.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>📍 Splinter Hemorrhage</h3>
+                    <p>Thin red/brown lines under the nail, may indicate endocarditis or vasculitis.</p>
+                </div>
+                <div class="disease-info-card">
+                    <h3>🏳️ Terry's Nail</h3>
+                    <p>Mostly white nails with a dark band at the tip, associated with liver disease or diabetes.</p>
+                </div>
+            </div>
+
+            <!-- Predict Button -->
+            <div class="predict-section">
+                <h2>Ready to Analyze Your Nail?</h2>
+                <p>Upload a nail image and get instant AI-powered diagnosis</p>
+                <a href="/nailpred" class="btn btn-primary btn-large">
+                    <i class="fas fa-search-plus"></i> Start Prediction
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Nail Disease Diagnosis System | Deep Learning Project</p>
+            <p>Powered by VGG16 Transfer Learning & Flask</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

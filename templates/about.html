@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nail Disease Diagnosis System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <i class="fas fa-hand-holding-medical"></i>
+                NailDiagnosis AI
+            </a>
+            <ul class="nav-links">
+                <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/about" class="active"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="/nailhome"><i class="fas fa-stethoscope"></i> Nail Disease</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1 class="page-title">About The Project</h1>
+            <p class="page-subtitle">Early Stage Disease Diagnosis Using Nail Image Processing</p>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-card">
+                    <h2><i class="fas fa-bullseye"></i> Project Objective</h2>
+                    <p>This project develops an early stage disease diagnosis system using deep learning
+                       techniques to analyze human nail images. By analyzing nail characteristics and
+                       abnormalities, the system detects and diagnoses early signs of various diseases,
+                       aiding healthcare professionals and individuals in timely intervention and disease management.</p>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-cogs"></i> Technology Stack</h2>
+                    <ul class="tech-list">
+                        <li><strong>Deep Learning Model:</strong> VGG16 (Transfer Learning)</li>
+                        <li><strong>Framework:</strong> TensorFlow / Keras</li>
+                        <li><strong>Web Framework:</strong> Flask</li>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                        <li><strong>Language:</strong> Python</li>
+                        <li><strong>Libraries:</strong> NumPy, Pillow, scikit-learn</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-list-ol"></i> Diseases Detected (17 Classes)</h2>
+                    <div class="disease-grid">
+                        <span class="disease-tag">Darier's Disease</span>
+                        <span class="disease-tag">Muehrcke's Lines</span>
+                        <span class="disease-tag">Alopecia Areata</span>
+                        <span class="disease-tag">Beau's Lines</span>
+                        <span class="disease-tag">Bluish Nail</span>
+                        <span class="disease-tag">Clubbing</span>
+                        <span class="disease-tag">Eczema</span>
+                        <span class="disease-tag">Lindsay's Nails</span>
+                        <span class="disease-tag">Koilonychia</span>
+                        <span class="disease-tag">Leukonychia</span>
+                        <span class="disease-tag">Onychogryphosis</span>
+                        <span class="disease-tag">Onycholysis</span>
+                        <span class="disease-tag">Onychomycosis</span>
+                        <span class="disease-tag">Pale Nail</span>
+                        <span class="disease-tag">Red Lunula</span>
+                        <span class="disease-tag">Splinter Hemorrhage</span>
+                        <span class="disease-tag">Terry's Nail</span>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-project-diagram"></i> How It Works</h2>
+                    <div class="workflow">
+                        <div class="workflow-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Data Collection</h4>
+                                <p>Nail images collected and organized into 17 disease categories</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Data Preprocessing</h4>
+                                <p>Images augmented and normalized using ImageDataGenerator</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Model Training</h4>
+                                <p>VGG16 transfer learning model trained on nail disease images</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Prediction</h4>
+                                <p>Upload nail image → AI analysis → Disease diagnosis result</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card disclaimer">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Disclaimer</h2>
+                    <p>This system is designed for educational and preliminary screening purposes only.
+                       It should not be used as a substitute for professional medical diagnosis.
+                       Always consult a qualified healthcare professional for accurate diagnosis and treatment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Nail Disease Diagnosis System | Deep Learning Project</p>
+            <p>Powered by VGG16 Transfer Learning & Flask</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
